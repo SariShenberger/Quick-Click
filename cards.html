@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="bootstrap-5.2.0-beta1-dist/css/bootstrap.css">
+    <link rel="icon" href="image/Quick.jpg">
+
+    <title>Quick Click</title>
+</head>
+
+<body>
+    <div id="header">
+        <a class="quick link" href="enter.html">תקלידו מהר</a>
+        <div id="menu" dir="rtl">
+            <div class="menu">
+                <a class="link" href="basic.html">שלב 1</a><br>
+                <p class="p">משחק הקלדה מומלץ לשלב ראשון <br>
+                    ניתן להעזר במקלדת הנראית על המסך במהלך המשחק.</p>
+            </div>
+            <div class="menu">
+                <a class="link" href="cards.html">שלב 2</a><br>
+                <p class="p">משחק הקלדה מומלץ לשלב שני<br>
+                    במהלך המשחק תנסו לגלות את התמונה .
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="base">
+        <div class="language">
+            <button id="hebrew">עברית</button>
+            <button id="english">english</button>
+        </div>
+        <div id="level">
+            <button class="level">שעור 1</button>
+            <button class="level">שעור 2</button>
+            <button class="level">שעור 3</button>
+        </div>
+        <div id="name"></div>
+    </div>
+    <div class="envelop">
+        <div id="container">
+            <div id="alert"></div>
+            <div id="letters"></div>
+            <div id="div_input"></div>
+            <div id="audio"></div>
+            <div id="cards_container" class="">
+                <div class="mycard close"></div>
+                <div class="mycard close"></div>
+                <div class="mycard close"></div>
+                <div class="mycard close"></div>
+                <div class="mycard close"></div>
+                <div class="mycard close"></div>
+                <div class="mycard close"></div>
+                <div class="mycard close"></div>
+                <div class="mycard close"></div>
+                <div class="mycard close"></div>
+                <div class="mycard close"></div>
+                <div class="mycard close"></div>
+                <div class="mycard close"></div>
+                <div class="mycard close"></div>
+                <div class="mycard close"></div>
+                <div class="mycard close"></div>
+                <div class="mycard close"></div>
+                <div class="mycard close"></div>
+                <div class="mycard close"></div>
+                <div class="mycard close"></div>
+                <div class="mycard close"></div>
+                <div class="mycard close"></div>
+                <div class="mycard close"></div>
+                <div class="mycard close"></div>
+                <div class="mycard close"></div>
+                <div class="mycard close"></div>
+                <div class="mycard close"></div>
+                <div class="mycard close"></div>
+                <div class="mycard close"></div>
+                <div class="mycard close"></div>
+                <div class="mycard close"></div>
+                <div class="mycard close"></div>
+                <div class="mycard close"></div>
+                <div class="mycard close"></div>
+                <div class="mycard close"></div>
+                <div class="mycard close"></div>
+                <div class="mycard close"></div>
+                <div class="mycard close"></div>
+                <div class="mycard close"></div>
+                <div class="mycard close"></div>
+                <div class="mycard close"></div>
+                <div class="mycard close"></div>
+                <div class="mycard close"></div>
+                <div class="mycard close"></div>
+                <div class="mycard close"></div>
+            </div>
+        </div>
+
+
+        <div class="teaching" dir="rtl">
+            <h3>איך זה עובד?</h3>
+            <ul>
+                <li>
+                    כניסה כמשתמש.
+                </li>
+                <li>
+                    בחירת שלב.
+                </li>
+                <li>
+                    בחירת שפה.
+                </li>
+                <li>
+                    בחירת שעור.
+                </li>
+                <li>
+                    <b> תקלידו מהר.</b>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <style>
+        body {
+            text-align: center;
+            font-family: sans-serif;
+            background-color: gray;
+        }
+
+        #letters {
+            font-size: x-large;
+        }
+
+        .input {
+            font-size: x-large;
+            width: 145px;
+        }
+
+        .mycard {
+            width: 20%;
+            height: 5vh;
+
+        }
+
+        #cards_container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin: auto;
+            direction: rtl;
+            margin: 14px;
+            box-sizing: 5px;
+            justify-content: center;
+            align-content: flex-start;
+        }
+
+        .close {
+            background-color: gainsboro;
+            border: #ed4c6a 1px solid;
+        }
+
+        .none {
+            display: none;
+        }
+
+        .right {
+            float: right;
+            font-size: 20px;
+            text-decoration: none;
+            color: rgb(245, 11, 11);
+
+        }
+
+        .right:hover {
+            cursor: pointer;
+        }
+
+       
+    </style>
+    <script src="jquery.js"></script>
+    <script src="cards.js"></script>
+
+</body>
+
+</html>

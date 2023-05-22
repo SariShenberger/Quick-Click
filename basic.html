@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="bootstrap-5.2.0-beta1-dist/css/bootstrap.css">
+    <link rel="icon" href="image/Quick.jpg">
+    <title>Quick Click</title>
+</head>
+
+<body>
+    <div id="header">
+        <a class="quick link" href="enter.html">תקלידו מהר</a>
+
+        <div id="menu" dir="rtl">
+            <div class="menu">
+                <a class="link" href="basic.html">שלב 1</a><br>
+                <p class="p">משחק הקלדה מומלץ לשלב ראשון <br>
+                    ניתן להעזר במקלדת הנראית על המסך במהלך המשחק.</p>
+            </div>
+            <div class="menu">
+                <a class="link" href="cards.html">שלב 2</a><br>
+                <p class="p">משחק הקלדה מומלץ לשלב שני<br>
+                    במהלך המשחק תנסו לגלות את התמונה .
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="base">
+        <div class="language">
+            <button id="hebrew">עברית</button>
+            <button id="english">english</button>
+        </div>
+        <div id="level">
+            <button class="level">שעור 1</button>
+            <button class="level">שעור 2</button>
+            <button class="level">שעור 3</button>
+        </div>
+        <div id="name"></div>
+    </div>
+    <div class="envelop">
+        <div id="container">
+            <div id="alert"></div>
+            <div id="letters"></div>
+            <div id="input"></div>
+            <div id="audio"></div>
+            <div id="hebrew_keyboard" class="none" dir="rtl">
+                <div class="key grey ">פ</div>
+                <div class="key purple">ם</div>
+                <div class="key blue">ן</div>
+                <div class="key green">ו</div>
+                <div class="key green">ט</div>
+                <div class="key pink">א</div>
+                <div class="key pink">ר</div>
+                <div class="key orange">ק</div>
+                <div class="key border_none"> </div><br>
+                <div class="key grey">ף</div>
+                <div class="key purple">ך</div>
+                <div class="key blue">ל</div>
+                <div class="key green">ח</div>
+                <div class="key green">י</div>
+                <div class="key pink">ע</div>
+                <div class="key pink">כ</div>
+                <div class="key orange">ג</div>
+                <div class="key red">ד</div>
+                <div class="key sky_blue">ש</div><br>
+                <div class="key grey">ץ</div>
+                <div class="key purple">ת</div>
+                <div class="key blue">צ</div>
+                <div class="key green">מ</div>
+                <div class="key pink">נ</div>
+                <div class="key pink">ה</div>
+                <div class="key orange">ב</div>
+                <div class="key red">ס</div>
+                <div class="key sky_blue">ז</div>
+            </div>
+            <div id="english_keyboard" class="none" dir="rtl">
+                <div class="key grey ">p</div>
+                <div class="key purple">o</div>
+                <div class="key blue">i</div>
+                <div class="key green">u</div>
+                <div class="key green">y</div>
+                <div class="key pink">t</div>
+                <div class="key pink">r</div>
+                <div class="key orange">e</div>
+                <div class="key red">w</div>
+                <div class="key sky_blue">q</div><br>
+                <div class="key border_none"> </div>
+                <div class="key purple">l</div>
+                <div class="key blue">k</div>
+                <div class="key green">j</div>
+                <div class="key green">h</div>
+                <div class="key pink">g</div>
+                <div class="key pink">f</div>
+                <div class="key orange">d</div>
+                <div class="key red">s</div>
+                <div class="key sky_blue">a</div><br>
+                <div class="key border_none"> </div>
+                <div class="key border_none"> </div>
+                <div class="key blue">m</div>
+                <div class="key green">n</div>
+                <div class="key pink">b</div>
+                <div class="key pink">v</div>
+                <div class="key orange">c</div>
+                <div class="key red">x</div>
+                <div class="key sky_blue">z</div>
+            </div>
+            <div id="hands">
+                <img src="image/יד שמאל.png" alt="">
+                <img src="image/יד ימין.png" alt="">
+            </div>
+
+        </div>
+        <div class="teaching" dir="rtl">
+            <h3>איך זה עובד?</h3>
+            <ul>
+                <li>
+                    כניסה כמשתמש.
+                </li>
+                <li>
+                    בחירת שלב.
+                </li>
+                <li>
+                    בחירת שפה.
+                </li>
+                <li>
+                    בחירת שעור.
+                </li>
+                <li>
+                    <b> תקלידו מהר.</b>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <style>
+        body {
+            text-align: center;
+            font-family: sans-serif;
+            background-color: grey;
+        }
+
+
+
+        #letters {
+            font-size: x-large;
+        }
+
+        .input {
+            font-size: x-large;
+            width: 190px;
+        }
+
+        #keyboard {
+            display: inline-block;
+            text-align: center;
+        }
+
+        .key {
+            border: black solid 2px;
+            border-radius: 15px;
+            display: inline-flex;
+            flex-wrap: wrap;
+            font-size: xxx-large;
+            font-family: sans-serif;
+            width: 35px;
+            height: 56px;
+            justify-content: center;
+            align-content: center;
+            border-top: groove;
+        }
+
+        .correctKey {
+            border-color: white;
+        }
+
+        .wrongKey {
+            border-color: red;
+        }
+
+        #hands img {
+            display: inline-block;
+        }
+
+        .grey {
+            background-color: #b9b9b9;
+            ;
+        }
+
+        .purple {
+            background-color: #c897c9;
+        }
+
+        .blue {
+            background-color: #4b9dc3fa;
+        }
+
+        .green {
+            background-color: #bcea31;
+        }
+
+        .pink {
+            background-color: #edb7c8;
+        }
+
+        .orange {
+            background-color: #ecc952;
+        }
+
+        .red {
+            background-color: #eb466c;
+        }
+
+        .sky_blue {
+            background-color: #a3edea;
+        }
+
+        .border_none {
+            border: none;
+        }
+
+        .none {
+            display: none;
+        }
+
+        .right {
+            float: right;
+            font-size: 20px;
+            text-decoration: none;
+            color: rgb(245, 11, 11);
+
+        }
+
+        .right:hover {
+            cursor: pointer;
+        }
+    </style>
+    <script src="jquery.js"></script>
+    <script src="basic.js"></script>
+
+</body>
+
+</html>

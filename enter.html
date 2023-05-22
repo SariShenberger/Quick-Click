@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="bootstrap-5.2.0-beta1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.css">
+    <link rel="icon" href="image/Quick.jpg">
+
+    <title>Quick Click</title>
+</head>
+
+<body>
+    <div id="header">
+        <a class="quick link" href="enter.html">תקלידו מהר</a>
+        <div id="menu" dir="rtl">
+            <div class="menu none">
+                <a class="link" href="basic.html">שלב 1</a><br>
+                <p class="p">משחק הקלדה מומלץ לשלב ראשון <br>
+                    ניתן להעזר במקלדת הנראית על המסך במהלך המשחק.</p>
+            </div>
+            <div class="menu none">
+                <a class="link" href="cards.html">שלב 2</a><br>
+                <p class="p">משחק הקלדה מומלץ לשלב שני<br>
+                    במהלך המשחק תנסו לגלות את התמונה .
+                </p>
+            </div>
+
+        </div>
+    </div>
+    <div class="envelop">
+        <div id="container">
+            <div id="alert"></div>
+            <img src="fontawesome-free-5.15.4-web/svgs/solid/search.svg" width="20px">
+            <input type="text" id="users_search" class="search" placeholder="שם משתמש">
+            <button id="submit" title="כניסה">✅</button>
+            <button id="drop" title=" הסר משתמש">🗑</button>
+            <div id="find"> </div>
+
+
+        </div>
+        <div class="teaching" dir="rtl">
+            <h3>איך זה עובד?</h3>
+            <ul>
+                <li>
+                    כניסה כמשתמש.
+                </li>
+                <li>
+                    בחירת שלב.
+                </li>
+                <li>
+                    בחירת שפה.
+                </li>
+                <li>
+                    בחירת שעור.
+                </li>
+                <li>
+                    <b> תקלידו מהר.</b>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <style>
+        body {
+            background-color: gray;
+        }
+
+        .none {
+            display: none;
+        }
+
+        .alert {
+            height: 80px;
+            text-align: center;
+        }
+
+        .right {
+            font-size: 20px;
+            text-decoration: none;
+
+        }
+
+        .right:hover {
+            cursor: pointer;
+        }
+
+        .search {
+            border-bottom-color: gray;
+            border-right: none;
+            border-top: none;
+            border-left: none;
+            border-radius: 40px;
+            text-align: center;
+            font-size: x-large;
+        }
+
+        .search:focus-visible {
+            color: #fc2d53;
+            border-bottom-color: gray;
+            border-right: none;
+            border-top: none;
+            border-left: none;
+            border-radius: 40px;
+            text-align: center;
+            text-align: center;
+            border-style: solid;
+            border-bottom: solid;
+        }
+
+        .list {
+            font-size: x-large;
+        }
+
+        .list:hover {
+            background-color: #fc2d53;
+        }
+
+    </style>
+
+    <script src="enter.js"></script>
+</body>
+
+</html>
